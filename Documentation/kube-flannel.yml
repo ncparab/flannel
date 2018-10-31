@@ -377,7 +377,7 @@ spec:
               fieldPath: metadata.namespace
         volumeMounts:
         - name: run
-          mountPath: /root
+          mountPath: /run
         - name: flannel-cfg
           mountPath: /etc/kube-flannel/
       volumes:
