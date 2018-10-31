@@ -377,13 +377,13 @@ spec:
               fieldPath: metadata.namespace
         volumeMounts:
         - name: run
-          mountPath: /run
+          mountPath: /root
         - name: flannel-cfg
           mountPath: /etc/kube-flannel/
       volumes:
         - name: run
           hostPath:
-            path: /run
+            path: /root
         - name: cni
           hostPath:
             path: /etc/cni/net.d
